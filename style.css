@@ -56,6 +56,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 1vw;
+    margin-bottom: 50px;
 }
 
 #nav-part2 h4 {
@@ -131,6 +132,24 @@ nav h3 {
     margin-top: 4vw;
     width: 100%;
 }
+
+#right {
+    z-index: 100;
+}
+
+#contact-form input, #contact-form textarea, #contact-form select {
+    transition: border-color 0.3s ease;
+}
+
+#contact-form input:focus, #contact-form textarea:focus, #contact-form select:focus {
+    border-color: #FE320A;
+    outline: none;
+}
+
+#contact-form button:hover {
+    background-color: #FF5C0B;
+}
+
 
 #hero-shape {
     position: absolute;
