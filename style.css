@@ -671,3 +671,229 @@ nav h3 {
       
     }
 }
+@media (max-width: 1024px) {
+
+    #page1 {
+        padding-top: 1.5vw; /* Slightly reduced for tablets */
+    }
+
+    #page3 {
+        padding: 10vw 0; /* Slightly more padding for tablets */
+    }
+    #nav-part2 h4 {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    #center {
+        height: 55vh;
+    }
+
+    #left h3 {
+        width: 35vw;
+        font-size: 2.2vw;
+        line-height: 2.4vw;
+    }
+
+    #center h1 {
+        font-size: 8vw;
+        line-height: 7vw;
+    }
+
+    #page2-bottom h1 {
+        font-size: 3.5vw;
+        width: 65%;
+        line-height: 3.5vw;
+    }
+
+    #bottom-part2 {
+        width: 25%;
+    }
+
+    #bottom-part2 p {
+        font-size: 1.2vw;
+    }
+
+    .elem {
+        height: 120px;
+    }
+
+    .elem h2 {
+        font-size: 2.5vw;
+    }
+}
+
+/* Mobile Styles (up to 767px) */
+@media (max-width: 767px) {
+    nav {
+        padding: 4vw;
+    }
+
+    nav img {
+        height: 30px;
+    }
+
+    #nav-part2 {
+        display: none;
+    }
+
+    nav h3 {
+        display: block;
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    #center {
+        height: auto;
+        flex-direction: column;
+        padding: 4vw;
+        gap: 30px;
+    }
+
+    #left h3 {
+        width: 100%;
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+
+    #center h1 {
+        font-size: 12vw;
+        line-height: 11vw;
+        text-align: left;
+    }
+
+    #page1 video {
+        margin-top: 30px;
+        border-radius: 15px;
+    }
+
+    #hero-shape {
+        display: none;
+    }
+
+    /* Page 2 Mobile Styles */
+    #moving-text h1 {
+        font-size: 11vw;
+    }
+
+    #gola {
+        height: 20px;
+        width: 20px;
+        margin: 0 10px;
+    }
+
+    #page2-bottom {
+        flex-direction: column;
+        gap: 30px;
+        padding: 4vw;
+    }
+
+    #page2-bottom h1 {
+        font-size: 7vw;
+        width: 100%;
+        line-height: 8vw;
+    }
+
+    #bottom-part2 {
+        width: 100%;
+    }
+
+    #bottom-part2 p {
+        font-size: 4vw;
+        margin-top: 15px;
+    }
+
+    /* Page 3 Mobile Styles */
+    .elem {
+        height: 100px;
+    }
+
+    .elem h2 {
+        font-size: 4.5vw;
+        padding: 0 10px;
+    }
+
+    /* Footer Mobile Styles */
+    #footer h1 {
+        font-size: 15vw;
+    }
+
+    #footer-bottom {
+        height: 8vh;
+    }
+
+    /* Loader Mobile Styles */
+    #loader h1 {
+        font-size: 8vw;
+    }
+}
+
+/* Small Mobile Styles (up to 480px) */
+@media (max-width: 480px) {
+    nav {
+        padding: 15px;
+    }
+
+    nav img {
+        height: 25px;
+    }
+
+    #left h3 {
+        font-size: 6vw;
+        line-height: 7vw;
+    }
+
+    #center h1 {
+        font-size: 14vw;
+        line-height: 13vw;
+    }
+
+    #moving-text h1 {
+        font-size: 13vw;
+    }
+
+    #page2-bottom h1 {
+        font-size: 8vw;
+        line-height: 9vw;
+    }
+
+    #bottom-part2 p {
+        font-size: 5vw;
+    }
+
+    .elem h2 {
+        font-size: 5vw;
+    }
+
+    #footer h1 {
+        font-size: 18vw;
+    }
+}
+
+/* Height-based Media Queries */
+@media (max-height: 700px) {
+    #center {
+        height: 70vh;
+    }
+
+    #page1 video {
+        height: 50vh;
+    }
+}
+
+/* Landscape Mode Fixes */
+@media (max-width: 767px) and (orientation: landscape) {
+    #center {
+        height: auto;
+        padding: 20px;
+    }
+
+    #page1 video {
+        height: 60vh;
+    }
+
+    #page2-bottom {
+        height: auto;
+        padding: 20px;
+    }
+}
