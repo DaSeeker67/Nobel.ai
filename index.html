@@ -12,6 +12,30 @@
 </head>
 
 <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const formData = {
+            name: event.target.name.value,
+            email: event.target.email.value,
+            phone: event.target.phone.value,
+            profession: event.target.profession.value,
+            subject: event.target.subject.value,
+            problem_statement: event.target.problem_statement.value,
+            additional_details: event.target.additional_details.value,
+            source: event.target.source.value,
+            contact_method: event.target.contact_method.value
+        };
+
+        console.log("Form Submitted:", formData);
+        alert("Thank you for reaching out! We’ll review your information and get back to you soon.");
+        event.target.reset();
+    });
+});
+
+    </script>
     <div id="loader">
         <h1>AI</h1>
         <h1>FOR</h1>
@@ -41,7 +65,7 @@
                     <h1>YOUR <br>
                         100x <br>
                         EDGE<br>
-                    .</h1>
+                    </h1>
                 </div>
 
             </div>
@@ -118,7 +142,54 @@
                 </div>
                 
             </div>
+            <!-- Contact Us Section -->
+<section id="contact-us" style="min-height: 100vh; width: 100%; background-color: #EFEAE3; padding: 5vw 2vw; position: relative;">
+    <div style="text-align: center; margin-bottom: 4vw;">
+        <h2 style="font-size: 4vw; color: #333; font-weight: 500; letter-spacing: 1px;">Contact Us</h2>
+        <p style="font-size: 1.5vw; color: #555;">We'd love to hear from you! Please provide as much information as possible.</p>
+    </div>
+
+    <form id="contact-form" style="max-width: 600px; margin: auto; display: flex; flex-direction: column; gap: 1.5vw;">
+
+        <input type="text" name="name" placeholder="Your Name" required style="padding: 1.2vw; font-size: 1.2vw; border: 1px solid #ccc; border-radius: 8px; background-color: #FFF;">
+        
+        <input type="type" name="email" placeholder="Your Email" required style="padding: 1.2vw; font-size: 1.2vw; border: 1px solid #ccc; border-radius: 8px; background-color: #FFF;">
+        
+        <input type="tel" name="phone" placeholder="Your Phone Number" required style="padding: 1.2vw; font-size: 1.2vw; border: 1px solid #ccc; border-radius: 8px; background-color: #FFF;">
+        
+        <input type="text" name="profession" placeholder="Your Profession" style="padding: 1.2vw; font-size: 1.2vw; border: 1px solid #ccc; border-radius: 8px; background-color: #FFF;">
+        
+        <input type="text" name="subject" placeholder="Subject" style="padding: 1.2vw; font-size: 1.2vw; border: 1px solid #ccc; border-radius: 8px; background-color: #FFF;">
+        
+        <textarea name="problem_statement" rows="4" placeholder="Problem Statement / Nature of Inquiry" style="padding: 1.2vw; font-size: 1.2vw; border: 1px solid #ccc; border-radius: 8px; background-color: #FFF;"></textarea>
+        
+        <textarea name="additional_details" rows="4" placeholder="Additional Details or Comments" style="padding: 1.2vw; font-size: 1.2vw; border: 1px solid #ccc; border-radius: 8px; background-color: #FFF;"></textarea>
+
+        <select name="source" style="padding: 1.2vw; font-size: 1.2vw; border: 1px solid #ccc; border-radius: 8px; background-color: #FFF;">
+            <option value="" disabled selected>Where did you hear about us?</option>
+            <option value="search_engine">Search Engine</option>
+            <option value="social_media">Social Media</option>
+            <option value="friend_or_family">Friend or Family</option>
+            <option value="advertisement">Advertisement</option>
+            <option value="other">Other</option>
+        </select>
+
+
+        <select name="contact_method" style="padding: 1.2vw; font-size: 1.2vw; border: 1px solid #ccc; border-radius: 8px; background-color: #FFF;">
+            <option value="" disabled selected>Preferred Contact Method</option>
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="either">Either</option>
+        </select>
+
+        <button type="submit" style="padding: 1.2vw; font-size: 1.2vw; border: none; border-radius: 8px; background-color: #FE320A; color: #FFF; cursor: pointer; transition: background-color 0.3s;">
+            Send Message
+        </button>
+    </form>
+</section>
+
         </div>
+        
         <div id="page4">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -133,6 +204,7 @@
 
             </div>
         </div>
+        
         <div id="page5">
 
         </div>
